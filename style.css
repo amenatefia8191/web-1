@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 3rem;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'roboto', sans-serif;
+    /* transition: all .500s ease; */
+}
+body {
+    background-color: var(--bg-color);
+}
+:root {
+    --bg-color: #191919;
+    --text-color: #fff;
+
+    --font-h6: 9px;
+    --font-h1: 3.5rem;
+    --font-h3: 40px;
+    
+}
+section {
+    padding:  160px 8%;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    transition: all .48s ease;
+    padding: 30px 30px;
+}
+.navList {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.navList a {
+    color: var(--text-color);
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 100;
+    align-items: center;
+
+    
+}
+#menu {
+    font-size: 30px;
+    color: white;
+    display: none;
+    z-index: 10001;
+}
+
+header.stickY {
+     background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px); 
+}
+
+/*    home-container  */
+
+.home-container {
+    padding:  160px 7% 100px;
+    background-image: url('/img/home.jpg');
+    height: 130vh;
+    width: 100%;
+    background-size: cover;
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+}
+.home-container-content {
+    border: 1px solid #fff;
+    border-radius: 25px;
+    width: 100rem;
+    padding: 35px;
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-content {
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(5px);
+    height: 80vh;
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px;
+}
+.text-content h5 {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: var(--font-h6);
+    font-weight: 100;
+}
+.text-content h1 {
+    font-size: var(--font-h1);
+    color: var(--text-color);
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    font-weight: 400;
+}
+.text-content .one {
+    position: relative;
+    top: 85%;
+}
+
+ /*      about section styling   */
+
+.F-about-text hr  {
+    width: 350px;
+    height: 1px;
+    color: var(--text-color);
+    margin: 10px 0px 10px ;
+}
+
+.F-about-text h5, h4 {
+    color: var(--text-color);
+    font-weight: 100;
+    line-height: 1.3;
+}
+.F-about-text h4 {
+    margin-left: 20rem;
+}
+.S-text-sec p {
+    width: 550px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.F-about-text i {
+    font-size: 40px;
+    color: var(--text-color);
+    position: relative;
+    top: 10rem;
+    cursor: pointer;
+
+}
+.F-about-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.S-about-content  {
+    background-image: url('/img/moon.jpg');
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+}
+
+/* the second about section */
+.about-section {
+    background-image: url('/img/moon.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.about-section-text {
+    display: flex;
+}
+.about-section-text h3 {
+    font-size: var(--font-h3);
+    color: var(--text-color);
+    width: 330px;
+    line-height: 1.6;
+    margin-top: -95px;
+}
+.about-section-text h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    color: var(--text-color);
+    position: relative;
+    left: 43rem;
+    font-weight: 100;
+    gap: 30rem;
+    top: -6rem;
+}
+.about-section-text i {
+    font-size: 40px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/*    Design section  styling     */
+
+.design {
+    margin-top: 10rem;
+} 
+
+.design-f-content h5 {
+    color: var(--text-color);
+    font-weight: 100;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.design-f-content .h5-2 {
+    margin-left: 16rem;
+}
+
+.design-f-content .h5-3 {
+    margin-left: 28rem;
+}
+.design-f-content hr {
+    width: 28%;
+    margin-bottom: 4px;
+    color: var(--text-color);
+}
+
+.design-f-content .long {
+    width: 50%;
+}
+.content-child-1 p {
+    width: 204px;
+    font-size: 10px;
+    font-weight: 100;
+    word-break: break-all;
+    word-spacing: 1px;
+    color: var(--text-color);
+}
+.content-child-1 i {
+    font-size: 40px;
+    color: var(--text-color);
+    position: relative;
+    top: 22rem;
+}
+.content-child-2 {
+    border: 1px solid var(--text-color);
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 30px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child-1 {
+    background-image: url('/img/mood-1.jpg');
+    height: 69vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.child-2 {
+    background-image: url('/img/mood-2.jpg');
+    height: 69vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.child-3 {
+    background-image: url('/img/mood-3.jpg');
+    height: 69vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.child-1-content-link {
+    color: var(--text-color);
+    font-size: 10px;
+    display: flex;
+    gap: 1rem;
+    float: right;
+}
+.btn-of-child-1 {
+    padding: 3px 12px;
+    background-color: transparent;
+    color: yellow;
+    border: 1px solid yellow;
+}
+.btn-of-child-2 {
+    padding: 3px 12px;
+    background-color: yellow;
+    color: black;
+    border: 1px solid transparent;
+}
+.child-1-content-text {
+    margin-top: 17rem;
+}
+
+.child-1-content-text h5{
+    color: white;
+    width: 330px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.2;
+
+}
+.child-1-content-text p {
+    color: white;
+    font-size: 8px;
+    width: 260px;
+    line-height: 1.1;
+}
+.child-1-content-text button {
+    padding: 4px 15px;
+    color: black;
+    margin-top: 1rem;
+    background-color: yellow;
+    border: 1px solid transparent;
+}
+.S-design-container {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    margin-top: 5rem;
+}
